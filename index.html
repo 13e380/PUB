@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ndakima_bilingual_form.css">
+    <title>Ndakima Holding – Client Intake / Saisie client</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ndakima Holding – Client Intake / Saisie client</h1>
+        <p>
+            <strong>EN:</strong> Please complete this form so we can assess your needs and get in touch quickly.<br>
+            <strong>FR:</strong> Veuillez remplir ce formulaire afin que nous puissions évaluer vos besoins et vous contacter rapidement.
+        </p>
+        <form action="#" method="post">
+            <label>Full Name / Nom complet</label>
+            <input type="text" name="full_name" required>
+
+            <label>Phone number or WhatsApp / Numéro WhatsApp</label>
+            <input type="text" name="phone" required>
+
+            <label>Country / Pays</label>
+            <input type="text" name="country" required>
+
+            <label>Type of product needed / Type de produit recherché</label>
+            <select name="product_type" required>
+        <option value="">-- Select / Choisissez --</option>
+        <option value="clothes">Clothes / Vêtements</option>
+        <option value="shoes">Shoes / Chaussures</option>
+        <option value="accessories">Accessories / Accessoires</option>
+        <option value="tools">Tools & Equipment / Outils & équipements</option>
+        <option value="other">Other / Autre</option>
+      </select>
+
+            <label>Estimated quantity per month / Quantité mensuelle estimée</label>
+            <input type="text" name="quantity" required placeholder="e.g. 100 kg / ex : 100 kg">
+
+            <label>Do you need custom branding or packaging? / Avez-vous besoin d’un emballage personnalisé ?</label>
+            <select name="custom_packaging" required>
+        <option value="yes">Yes / Oui</option>
+        <option value="no">No / Non</option>
+      </select>
+
+            <label>When do you want to start? / Quand souhaitez-vous commencer ?</label>
+            <input type="date" name="start_date" required>
+
+            <label>Additional notes (optional) / Informations supplémentaires (facultatif)</label>
+            <textarea name="additional_info" rows="4"></textarea>
+
+            <button type="submit">Submit / Envoyer</button>
+        </form>
+    </div>
+</body>
+
+</html>
